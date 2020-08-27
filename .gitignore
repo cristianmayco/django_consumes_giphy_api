@@ -1,2 +1,9 @@
 # Project exclude paths
 /venv/
+.idea/
+app/__pycache__/*
+core/__pycache__/*
+core/migrations/*
+db.sqlite3
+core/test_requests.py
+urls_api.txt

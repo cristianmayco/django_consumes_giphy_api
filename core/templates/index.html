@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for gif in gifs %}
+<img src="{{gif.images.fixed_height_still.url}}">
+{%endfor%}
+</body>
+</html>
