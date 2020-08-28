@@ -5,6 +5,9 @@
     <title>Title</title>
 </head>
 <body>
+<img src="https://developers.giphy.com/static/img/dev-logo-lg.7404c00322a8.gif">
+<input type="text">
+<input type="submit" value="Search">
 {% for gif in gifs %}
 <img src="{{gif.images.fixed_height_still.url}}">
 {%endfor%}
