@@ -6,10 +6,14 @@
 </head>
 <body>
 <img src="https://developers.giphy.com/static/img/dev-logo-lg.7404c00322a8.gif">
-<input type="text">
-<input type="submit" value="Search">
+<form method="GET" action="" id="searchform" class="  form-inline my-2 my-lg-0">
+            <input type="search"  id="searchbox"
+                   name="q" type="text"
+                   value="{{ request.GET.q }}"
+                   placeholder="Search"/>
+        </form>
 {% for gif in gifs %}
-<img src="{{gif.images.fixed_height_still.url}}">
+<img src="{{gif.images.fixed_width_still.url}}">
 {%endfor%}
 </body>
 </html>
